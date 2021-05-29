@@ -1,127 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Book Program Discussion Homepage</title>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="w3.css" />
-  <!-- Add icon library -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+<title>Book Program Discussion Homepage</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="w3.css" />
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <div class="w3-top">
-    <div class="w3-bar custom-background-colour w3-card w3-large">
-      <!-- Logo credit: https://www.brandcrowd.com/-->
-      <img class="logo" src="Logo.png" alt="Book Program Discussion Logo" />
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-padding-large custom-button-hover"
-        >Login</a
-      >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-padding-large custom-button-hover"
-        >Members</a
-      >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-padding-large custom-button-hover"
-        >News</a
-      >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-padding-large custom-button-hover"
-        >Get Started</a
-      >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-padding-large custom-button-hover"
-        >Books</a
-      >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-padding-large custom-button-hover"
-        >About Us</a
-      >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-padding-large custom-button-hover"
-        >Home</a
-      >
+<div class="w3-top">
+  <div class="w3-bar custom-background-colour w3-card w3-large">
+    <!-- Logo credit: https://www.brandcrowd.com/-->
+    <img class="logo" src="Logo.png" alt="Book Program Discussion Logo" />
+    <a href="#" class="w3-bar-item w3-button w3-padding-large custom-button-hover">Login</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large custom-button-hover">Members</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large custom-button-hover">News</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large custom-button-hover">Get Started</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large custom-button-hover">Books</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large custom-button-hover">About Us</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large custom-button-hover">Home</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container custom-background-colour w3-center sidebars header-background" style="padding: 128px 16px">
+  <h1 class="w3-margin w3-jumbo header-text" style="color: black">
+    Love books?
+  </h1>
+  <p class="w3-xlarge header-text" style="color: black">
+    Join the discussion!
+  </p>
+  <button class="w3-button rounded-button w3-padding-large w3-large w3-margin-top first" href="#" id="trigger-modal"
+    onclick="openModal()">
+    Register
+  </button>
+  <!-- Credit: https://codepen.io/Gthibaud/pen/MqpmXE -->
+  <div id="modal-background" class="modal-background"></div>
+  <div id="bookclubrego" class="modal">
+    <div>
+      <h1>Registration Details</h1> 
+      <i onclick="closeModal()" aria-name="Close button" class="fa fa-close fa-dark-hover close-icon"></i>
+    </div>
+    <form class="w3-padding-32">
+      <div id="userDetails">
+        <div class="w3-half">
+          <div><label for="givenName">Given Name: </label><br></div>
+          <div><input class="input custom-input" type="text" name="Given Name"><br></div>
+        </div>
+        <div class="w3-half">
+          <div><label for="givenName">Surname: </label><br></div>
+          <div><input class="input custom-input" type="text" name="Surname"><br></div>
+        </div>
+
+        <div class="w3-half">
+          <div><label for="givenName">Username: </label><br></div>
+          <div><input class="input custom-input" type="text" name="Username"><br></div>
+        </div>
+        <div class="w3-half">
+          <div><label for="givenName">Password </label><br></div>
+          <div><input class="input custom-input" type="password" name="Password"><br></div>
+        </div>
+
+      </div>
+      <div id="addresses">
+        <div class="w3-half">
+          <div><label for="givenName">Home Address: </label><br></div>
+          <div><input class="input custom-input" type="text" name="Home Address"><br></div>
+        </div>
+        <div class="w3-half">
+          <div><label for="givenName">Work Address: </label><br></div>
+          <div><input class="input custom-input" type="text" name="Work Address"><br></div>
+        </div>
+      </div>
+      <div id="contacts">
+        <div class="w3-half">
+          <div><label for="phone">Mobile Number:</label><br></div>
+          <div><input class="input custom-input" type="tel" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br></div>
+        </div>
+        <div class="w3-half">
+          <div><label for="givenName">Email:</label><br></div>
+          <div><input class="input custom-input" type="email" name="Email"><br></div>
+        </div>        
+      </div>
+    </form>
+    <div class="options">
+      <button id="registerModalBtn" class="btn" onclick="closeModal()">Register</button>
     </div>
   </div>
+</header>
 
-  <!-- Header -->
-  <header
-    class="w3-container custom-background-colour w3-center sidebars people"
-    style="padding: 128px 16px"
-  >
-    <h1 class="w3-margin w3-jumbo header-text" style="color: black">
-      Love books?
-    </h1>
-    <p class="w3-xlarge header-text" style="color: black">
-      Join the discussion!
-    </p>
-    <button
-      class="w3-button rounded-button w3-padding-large w3-large w3-margin-top"
-    >
-      Register
-    </button>
-  </header>
+<script>
+  const modal = document.getElementById("bookclubrego");
+  const modal_background = document.getElementById("modal-background");
+  const btn = document.getElementById("registerModalBtn")
 
-  <div class="w3-row-padding w3-margin-bottom">
-    <div class="w3-third">
-      <div class="w3-container custom-background-colour w3-opacity w3-padding-16">
-        <div class="w3-left"><i class="fa-hacker-news w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3>99</h3>
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Latest News</h4>
-      </div>
+  const openModal = () => {
+    modal.style.visibility = "visible";
+    modal_background.style.visibility = "visible";
+    btn.style.transition = "all 0.2s";
+  }
+  const closeModal = () => {
+    btn.style.transition = "all 0.01s";
+    modal.style.visibility = "hidden";
+    modal_background.style.visibility = "hidden";
+  }
+</script>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container w3-opacity">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Get Involved</h1>
+      <h5 class="w3-padding-32">There are plenty of great reasons to get involved...</h5>
+
+      <p class="w3-text-grey">By joining the book discussion program, you'll get the chance to:
+      <ul>
+        <li>Meet new people</li>
+        <li>Experience new and interesting reading adventures</li>
+        <li>And much much more!</li>
+      </ul>
+      So whatever the reason you want to be part of a book group, we're here to help. Wondering what's involved? Well,
+      we start ...</p>
     </div>
-    <div class="w3-third">
-      <div class="w3-container custom-background-colour w3-opacity w3-padding-16">
-        <div class="w3-left"><i class="fa fa-book w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3></h3>
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Books</h4>
-        <ul>
-          <li>To Kill a Mockingbird</li>
-          <li>Life of Pi</li>
-          <li>Software for Dummies</li>
-        </ul>
-        <p>...</p>
-      </div>
-    </div>
-    <div class="w3-third">
-      <div class="w3-container custom-background-colour w3-opacity w3-padding-16">
-        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3>99</h3>
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Get Involved</h4>
-        <p>Meet new people and discover more about yourself...</p>
-      </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
     </div>
   </div>
+</div>
 
-  <!-- Footer -->
-  <footer
-    class="
-      w3-container w3-padding-64 w3-center w3-opacity
+<!-- Footer -->
+<footer class="
+      w3-center w3-opacity
       custom-background-colour
-      footer-opacity
-    "
-  >
-    <div class="w3-xlarge w3-padding-32">
-      <!-- Add font awesome icons -->
-      <a href="#" class="fa fa-facebook w3-hover-opacity"></a>
-      <a href="#" class="fa fa-twitter w3-hover-opacity"></a>
-      <a href="#" class="fa fa-instagram w3-hover-opacity"></a>
-    </div>
-  </footer>
+      footer-custom
+    ">
+  <div class="footer-display">
+    <!-- Add font awesome icons -->
+    <a id="Facebook" href="#" class="fa fa-facebook w3-hover-opacity" aria-label="Facebook"></a>
+    <a href="#" class="fa fa-twitter w3-hover-opacity" aria-label="Twitter"></a>
+    <a href="#" class="fa fa-instagram w3-hover-opacity" aria-label="Instagram"></a>
+  </div>
+</footer>
+
 </html>
