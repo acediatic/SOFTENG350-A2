@@ -1090,7 +1090,7 @@ a {
   font-size: 15px !important;
 }
 .w3-large {
-  font-size: 18px !important;
+  font-size: 20px !important;
 }
 .w3-xlarge {
   font-size: 24px !important;
@@ -1626,17 +1626,27 @@ a {
   border-color: #e7ffff !important;
 }
 
-/* My additions */
+/* ******************** MY NEW CLASSES ***********************/
 
 .custom-background-colour {
   background-color: #642424;
+}
+
+.custom-colour-inverted {
+  color: #642424;
+}
+
+.custom-background-inverted {
+  background-color: #ece4b7;
+}
+
+.custom-colour {
   color: #ece4b7;
 }
 
-.custom-blue-background,
 .custom-button-hover:hover {
-  background-color: #3f6634 !important;
-  color: #ece4b7 !important;
+  background-color: #ece4b7 !important;
+  color: #642424 !important;
 }
 
 .custom-button-expand {
@@ -1674,9 +1684,9 @@ a {
 }
 
 .header-background {
-  background-image: url("sincerely-media-_-hjiem5TqI-unsplash.jpg");
+  background-image: url("cover-photo.jpg");
   background-size: 1000px, auto;
-  border-radius: 100px;
+  border-radius: 50px;
 }
 
 .header-text {
@@ -1700,16 +1710,6 @@ a {
   justify-content: space-evenly;
 }
 
-.first {
-  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-}
-.first:hover {
-  box-shadow: 0 0 40px 40px #3f6634 inset;
-  transform: scale(1.1);
-  transition-duration: 0.2s;
-}
-
 .modal-background {
   background-color: black;
   visibility: hidden;
@@ -1723,24 +1723,27 @@ a {
 
 .custom-input {
   padding: 10px;
-  border-radius:40px;
+  border-radius: 40px;
   border: 0;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
 }
 
 .label {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-/* Other THing */
+/* Modal CSS - adapted from https://codepen.io/ig_design/pen/BajVZre */
 .modal {
+  /* My Additions */
   z-index: 5;
+  min-width: 600px;
+  visibility: hidden;
+
+  /* Original Code */
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: auto;
-  visibility: hidden;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -1749,21 +1752,13 @@ a {
   border-radius: 5px;
   background: white;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
-  color: #642424;
 }
-.message {
-  font-size: 1.1rem;
-  margin-bottom: 1.6rem;
-  margin-top: 0;
-}
+
 .btn {
-  color: inherit;
   font-family: inherit;
   font-size: inherit;
-  background: white;
   padding: 0.3rem 3.4rem;
   border: 3px solid black;
-  margin-right: 2.6rem;
   box-shadow: 0 0 0 black;
   transition: all 0.2s;
 }
@@ -1782,8 +1777,13 @@ a {
   transform: translate(0, 0);
 }
 
+/* My Additions */
 .options {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.btn-wide {
+  width: 400px;
 }

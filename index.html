@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 <div class="w3-top">
-  <div class="w3-bar custom-background-colour w3-card w3-large">
+  <div class="w3-bar custom-background-colour custom-colour w3-card w3-large">
     <!-- Logo credit: https://www.brandcrowd.com/-->
     <img class="logo" src="Logo.png" alt="Book Program Discussion Logo" />
     <a href="#" class="w3-bar-item w3-button w3-padding-large custom-button-hover">Login</a>
@@ -21,20 +21,20 @@
 </div>
 
 <!-- Header -->
-<header class="w3-container custom-background-colour w3-center sidebars header-background" style="padding: 128px 16px">
+<header class="w3-container custom-background-colour custom-colour w3-center sidebars header-background" style="padding: 128px 16px">
   <h1 class="w3-margin w3-jumbo header-text" style="color: black">
     Love books?
   </h1>
   <p class="w3-xlarge header-text" style="color: black">
     Join the discussion!
   </p>
-  <button class="w3-button rounded-button w3-padding-large w3-large w3-margin-top first" href="#" id="trigger-modal"
+  <button class="btn custom-background-colour custom-colour custom-button-hover rounded-button w3-padding-large btn-wide w3-large w3-margin-top first" href="#" id="trigger-modal"
     onclick="openModal()">
     Register
   </button>
   <!-- Credit: https://codepen.io/Gthibaud/pen/MqpmXE -->
   <div id="modal-background" class="modal-background"></div>
-  <div id="bookclubrego" class="modal">
+  <div id="bookclubrego" class="modal custom-colour-inverted">
     <div>
       <h1>Registration Details</h1> 
       <i onclick="closeModal()" aria-name="Close button" class="fa fa-close fa-dark-hover close-icon"></i>
@@ -82,7 +82,7 @@
       </div>
     </form>
     <div class="options">
-      <button id="registerModalBtn" class="btn" onclick="closeModal()">Register</button>
+      <button id="registerModalBtn" class="btn btn-wide custom-background-colour custom-colour custom-button-hover" onclick="closeModal()">Register</button>
     </div>
   </div>
 </header>
@@ -131,6 +131,7 @@
 <footer class="
       w3-center w3-opacity
       custom-background-colour
+      custom-colour
       footer-custom
     ">
   <div class="footer-display">
