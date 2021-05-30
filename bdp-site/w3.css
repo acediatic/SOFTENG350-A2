@@ -1628,11 +1628,11 @@ a {
 
 /* ******************** MY NEW CLASSES ***********************/
 
-.custom-background-colour {
+.custom-background-color {
   background-color: #642424;
 }
 
-.custom-colour-inverted {
+.custom-color-inverted {
   color: #642424;
 }
 
@@ -1640,7 +1640,7 @@ a {
   background-color: #ece4b7;
 }
 
-.custom-colour {
+.custom-color {
   color: #ece4b7;
 }
 
