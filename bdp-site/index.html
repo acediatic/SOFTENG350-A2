@@ -40,14 +40,13 @@
         " href="#" id="trigger-modal" onclick="openModal()">
       Register
     </button>
+  </header>
+
+  <div id="modal" class="w3-center">
     <!-- Credit: https://codepen.io/Gthibaud/pen/MqpmXE -->
     <div id="modal-background" class="modal-background"></div>
     <div id="bookclubrego" class="modal custom-color-inverted">
-      <div>
-        <h1>Registration Details</h1>
-        <i tabindex="0" onclick="closeModal()" aria-name="Close button"
-          class="fa fa-close fa-dark-hover close-icon"></i>
-      </div>
+      <h1>Registration Details</h1>
       <form class="w3-padding-32">
         <div id="userDetails">
           <div class="w3-half">
@@ -108,15 +107,18 @@
       </form>
       <div class="options">
         <button id="registerModalBtn" class="
-              btn btn-wide
-              custom-background-color custom-color custom-button-hover
-            " onclick="closeModal()">
+                  btn btn-wide
+                  custom-background-color custom-color custom-button-hover
+                " onclick="closeModal()">
           Register
         </button>
       </div>
+      <button aria-name="Close button" onclick="closeModal()" class="w3-button close-icon">
+        <i class="fa fa-dark-hover fa-close "></i>
+      </button>
     </div>
     <script src="scripts.js"></script>
-  </header>
+  </div>
 
   <!-- Three Info Panels-->
   <div class="sidebars three-panels">

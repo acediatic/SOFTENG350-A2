@@ -1644,7 +1644,9 @@ a {
   color: #ece4b7;
 }
 
-.custom-button-hover:hover {
+.custom-button-hover:hover,
+.custom-button-hover:focus {
+  outline: 0;
   background-color: #ece4b7 !important;
   color: #642424 !important;
 }
@@ -1670,6 +1672,7 @@ a {
 }
 
 .close-icon {
+  background-color: transparent;
   position: absolute;
   right: -5px;
   top: -15px;
@@ -1712,7 +1715,6 @@ a {
 }
 
 .modal-background {
-  background-color: black;
   visibility: hidden;
   opacity: 60%;
   position: fixed;
@@ -1720,6 +1722,7 @@ a {
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: 2;
 }
 
 .custom-input {
@@ -1787,6 +1790,8 @@ a {
   z-index: 5;
   min-width: 600px;
   visibility: hidden;
+  background-color: #3e4943;
+  color: white;
 
   /* Original Code */
   position: absolute;
@@ -1799,7 +1804,6 @@ a {
   padding: 1.6rem 3rem;
   border: 3px solid black;
   border-radius: 5px;
-  background: white;
   box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
