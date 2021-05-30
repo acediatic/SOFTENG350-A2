@@ -1734,10 +1734,10 @@ a {
 }
 
 .panel {
-  display: flex; /*set display to flex*/
-  flex-direction: column; /*flex direction colum*/
-  flex-wrap: wrap; /*flex wrap*/
-  align-content: flex-start; /*add align content flex start*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
   background-color: #3e4943;
   color: white;
   padding: 20px;
@@ -1781,7 +1781,7 @@ a {
   height: 100vh;
 }
 
-/* Modal CSS - adapted from https://codepen.io/ig_design/pen/BajVZre */
+/* Modal CSS - adapted from https://codepen.io/Gthibaud/pen/MqpmXE*/
 .modal {
   /* My Additions */
   z-index: 5;
