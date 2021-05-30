@@ -481,7 +481,7 @@ a {
 }
 .w3-bar .w3-bar-item {
   height: 100%;
-  padding: 8px 16px;
+  padding: 26px 8px;
   float: right;
   width: auto;
   border: none;
@@ -1696,6 +1696,7 @@ a {
   letter-spacing: -1px;
   line-height: 1;
   text-align: center;
+  color: black;
 }
 
 .footer-custom {
