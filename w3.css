@@ -1686,7 +1686,7 @@ a {
 .header-background {
   background-image: url("cover-photo.jpg");
   background-size: 1000px, auto;
-  border-radius: 50px;
+  padding: 128px 16px;
 }
 
 .header-text {
@@ -1730,6 +1730,54 @@ a {
 
 .label {
   font-weight: bold;
+}
+
+.panel {
+  display: flex; /*set display to flex*/
+  flex-direction: column; /*flex direction colum*/
+  flex-wrap: wrap; /*flex wrap*/
+  align-content: flex-start; /*add align content flex start*/
+  background-color: #3e4943;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  height: 500px;
+}
+
+.panel-text {
+  text-align: left;
+  overflow: hidden;
+  height: 9em;
+  margin: 0;
+}
+
+.panel-left {
+  margin-left: 0;
+}
+
+.panel-right {
+  margin-right: 0;
+}
+
+.panel-img {
+  width: 100%;
+  height: 9em;
+  object-fit: cover;
+}
+
+.three-panels {
+  display: flex;
+}
+
+.centering {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.max-height {
+  height: 100vh;
 }
 
 /* Modal CSS - adapted from https://codepen.io/ig_design/pen/BajVZre */

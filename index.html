@@ -20,126 +20,147 @@
   </div>
 </div>
 
-<!-- Header -->
-<header class="w3-container custom-background-colour custom-colour w3-center sidebars header-background" style="padding: 128px 16px">
-  <h1 class="w3-margin w3-jumbo header-text" style="color: black">
-    Love books?
-  </h1>
-  <p class="w3-xlarge header-text" style="color: black">
-    Join the discussion!
-  </p>
-  <button class="btn custom-background-colour custom-colour custom-button-hover rounded-button w3-padding-large btn-wide w3-large w3-margin-top first" href="#" id="trigger-modal"
-    onclick="openModal()">
-    Register
-  </button>
-  <!-- Credit: https://codepen.io/Gthibaud/pen/MqpmXE -->
-  <div id="modal-background" class="modal-background"></div>
-  <div id="bookclubrego" class="modal custom-colour-inverted">
-    <div>
-      <h1>Registration Details</h1> 
-      <i onclick="closeModal()" aria-name="Close button" class="fa fa-close fa-dark-hover close-icon"></i>
+<div class="centering max-height">
+  <!-- Header -->
+  <header class="custom-background-colour custom-colour w3-center sidebars header-background">
+    <h1 class="w3-margin w3-jumbo header-text" style="color: black">
+      Love books?
+    </h1>
+    <p class="w3-xlarge header-text" style="color: black">
+      Join the discussion!
+    </p>
+    <button
+      class="btn custom-background-colour custom-colour custom-button-hover rounded-button w3-padding-large btn-wide w3-large w3-margin-top first"
+      href="#" id="trigger-modal" onclick="openModal()">
+      Register
+    </button>
+    <!-- Credit: https://codepen.io/Gthibaud/pen/MqpmXE -->
+    <div id="modal-background" class="modal-background"></div>
+    <div id="bookclubrego" class="modal custom-colour-inverted">
+      <div>
+        <h1>Registration Details</h1>
+        <i onclick="closeModal()" aria-name="Close button" class="fa fa-close fa-dark-hover close-icon"></i>
+      </div>
+      <form class="w3-padding-32">
+        <div id="userDetails">
+          <div class="w3-half">
+            <div><label for="givenName">Given Name: </label><br></div>
+            <div><input class="input custom-input" type="text" name="Given Name"><br></div>
+          </div>
+          <div class="w3-half">
+            <div><label for="givenName">Surname: </label><br></div>
+            <div><input class="input custom-input" type="text" name="Surname"><br></div>
+          </div>
+
+          <div class="w3-half">
+            <div><label for="givenName">Username: </label><br></div>
+            <div><input class="input custom-input" type="text" name="Username"><br></div>
+          </div>
+          <div class="w3-half">
+            <div><label for="givenName">Password </label><br></div>
+            <div><input class="input custom-input" type="password" name="Password"><br></div>
+          </div>
+
+        </div>
+        <div id="addresses">
+          <div class="w3-half">
+            <div><label for="givenName">Home Address: </label><br></div>
+            <div><input class="input custom-input" type="text" name="Home Address"><br></div>
+          </div>
+          <div class="w3-half">
+            <div><label for="givenName">Work Address: </label><br></div>
+            <div><input class="input custom-input" type="text" name="Work Address"><br></div>
+          </div>
+        </div>
+        <div id="contacts">
+          <div class="w3-half">
+            <div><label for="phone">Mobile Number:</label><br></div>
+            <div><input class="input custom-input" type="tel" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            </div>
+          </div>
+          <div class="w3-half">
+            <div><label for="givenName">Email:</label><br></div>
+            <div><input class="input custom-input" type="email" name="Email"><br></div>
+          </div>
+        </div>
+      </form>
+      <div class="options">
+        <button id="registerModalBtn" class="btn btn-wide custom-background-colour custom-colour custom-button-hover"
+          onclick="closeModal()">Register</button>
+      </div>
     </div>
-    <form class="w3-padding-32">
-      <div id="userDetails">
-        <div class="w3-half">
-          <div><label for="givenName">Given Name: </label><br></div>
-          <div><input class="input custom-input" type="text" name="Given Name"><br></div>
-        </div>
-        <div class="w3-half">
-          <div><label for="givenName">Surname: </label><br></div>
-          <div><input class="input custom-input" type="text" name="Surname"><br></div>
-        </div>
+  </header>
 
-        <div class="w3-half">
-          <div><label for="givenName">Username: </label><br></div>
-          <div><input class="input custom-input" type="text" name="Username"><br></div>
-        </div>
-        <div class="w3-half">
-          <div><label for="givenName">Password </label><br></div>
-          <div><input class="input custom-input" type="password" name="Password"><br></div>
-        </div>
+  <script>
+    const modal = document.getElementById("bookclubrego");
+    const modal_background = document.getElementById("modal-background");
+    const btn = document.getElementById("registerModalBtn")
 
-      </div>
-      <div id="addresses">
-        <div class="w3-half">
-          <div><label for="givenName">Home Address: </label><br></div>
-          <div><input class="input custom-input" type="text" name="Home Address"><br></div>
-        </div>
-        <div class="w3-half">
-          <div><label for="givenName">Work Address: </label><br></div>
-          <div><input class="input custom-input" type="text" name="Work Address"><br></div>
-        </div>
-      </div>
-      <div id="contacts">
-        <div class="w3-half">
-          <div><label for="phone">Mobile Number:</label><br></div>
-          <div><input class="input custom-input" type="tel" name="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br></div>
-        </div>
-        <div class="w3-half">
-          <div><label for="givenName">Email:</label><br></div>
-          <div><input class="input custom-input" type="email" name="Email"><br></div>
-        </div>        
-      </div>
-    </form>
-    <div class="options">
-      <button id="registerModalBtn" class="btn btn-wide custom-background-colour custom-colour custom-button-hover" onclick="closeModal()">Register</button>
+    const openModal = () => {
+      modal.style.visibility = "visible";
+      modal_background.style.visibility = "visible";
+      btn.style.transition = "all 0.2s";
+    }
+    const closeModal = () => {
+      btn.style.transition = "all 0.01s";
+      modal.style.visibility = "hidden";
+      modal_background.style.visibility = "hidden";
+    }
+  </script>
+
+  <!-- Three Info Panels-->
+  <div class="sidebars three-panels">
+    <!-- Panel 1 -->
+    <div class="panel panel-left w3-third centering">
+      <img class="panel-img" src="book-review.jpg">
+      <h2>
+        Latest News
+      </h2>
+      <p class="panel-text">
+        Kia ora whānau. Well, here we are again, back with the latest installment in the SOFTENG350 assignment. It was
+        an exciting twist to learn the project would...
+      </p>
+      <button class="btn custom-background-colour custom-colour custom-button-hover">More</button>
+    </div>
+
+    <!-- Panel 2 -->
+    <div class="panel w3-third centering">
+      <img class="panel-img" src="books-hand.jpg">
+      <h2>
+        Books
+      </h2>
+      <p class="panel-text"> Find out what exciting books we've uncovered with this month's reading list. There's sure
+        to be something new and fun for everyone. A new addition...</p>
+      <button class="btn custom-background-colour custom-colour custom-button-hover">More</button>
+    </div>
+
+    <!-- Panel 3 -->
+    <div class="panel panel-right w3-third centering">
+      <img class="panel-img" src="2020-banner.png">
+      <h2>
+        Get Involved
+      </h2>
+      <p class="panel-text">By joining the book discussion program, you'll get the chance to meet new people and
+        experience new and interesting reading adventures...
+      </p>
+      <button class="btn custom-background-colour custom-colour custom-button-hover">More</button>
     </div>
   </div>
-</header>
 
-<script>
-  const modal = document.getElementById("bookclubrego");
-  const modal_background = document.getElementById("modal-background");
-  const btn = document.getElementById("registerModalBtn")
-
-  const openModal = () => {
-    modal.style.visibility = "visible";
-    modal_background.style.visibility = "visible";
-    btn.style.transition = "all 0.2s";
-  }
-  const closeModal = () => {
-    btn.style.transition = "all 0.01s";
-    modal.style.visibility = "hidden";
-    modal_background.style.visibility = "hidden";
-  }
-</script>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container w3-opacity">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Get Involved</h1>
-      <h5 class="w3-padding-32">There are plenty of great reasons to get involved...</h5>
-
-      <p class="w3-text-grey">By joining the book discussion program, you'll get the chance to:
-      <ul>
-        <li>Meet new people</li>
-        <li>Experience new and interesting reading adventures</li>
-        <li>And much much more!</li>
-      </ul>
-      So whatever the reason you want to be part of a book group, we're here to help. Wondering what's involved? Well,
-      we start ...</p>
-    </div>
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="
+  <!-- Footer -->
+  <footer class="
       w3-center w3-opacity
       custom-background-colour
       custom-colour
-      footer-custom
+
     ">
-  <div class="footer-display">
-    <!-- Add font awesome icons -->
-    <a id="Facebook" href="#" class="fa fa-facebook w3-hover-opacity" aria-label="Facebook"></a>
-    <a href="#" class="fa fa-twitter w3-hover-opacity" aria-label="Twitter"></a>
-    <a href="#" class="fa fa-instagram w3-hover-opacity" aria-label="Instagram"></a>
-  </div>
-</footer>
+    <div class="footer-display">
+      <!-- Add font awesome icons -->
+      <a id="Facebook" href="#" class="fa fa-facebook w3-hover-opacity" aria-label="Facebook"></a>
+      <a href="#" class="fa fa-twitter w3-hover-opacity" aria-label="Twitter"></a>
+      <a href="#" class="fa fa-instagram w3-hover-opacity" aria-label="Instagram"></a>
+    </div>
+  </footer>
+</div>
 
 </html>
