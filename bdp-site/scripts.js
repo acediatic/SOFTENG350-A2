@@ -6,7 +6,7 @@ const openModal = () => {
   modal.style.visibility = "visible";
   modal_background.style.visibility = "visible";
   btn.style.transition = "all 0.2s";
-  document.getElementById("givenName").focus();
+  document.activeElement.blur();
 };
 
 const closeModal = () => {

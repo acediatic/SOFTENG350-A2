@@ -1715,6 +1715,7 @@ a {
 }
 
 .modal-background {
+  background-color: black;
   visibility: hidden;
   opacity: 60%;
   position: fixed;
