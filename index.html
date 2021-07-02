@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Book Program Discussion Homepage</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="w3.css" />
+<link rel="stylesheet" href="asin.css" />
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<div class="w3-top">
+  <div class="
+        w3-bar
+        custom-background-color custom-color
+        w3-card w3-medium w3-padidng-medium
+      ">
+    <!-- Logo credit: https://www.brandcrowd.com/-->
+    <img class="logo" src="Logo.png" alt="Book Program Discussion Logo" />
+    <a tabindex=7 href="#" class="w3-bar-item w3-button custom-button-hover" style="margin-right: 10px">Login</a>
+    <a tabindex=6 href="#" class="w3-bar-item w3-button custom-button-hover">Members</a>
+    <a tabindex=5 href="#" class="w3-bar-item w3-button custom-button-hover">News</a>
+    <a tabindex=4 href="#" class="w3-bar-item w3-button custom-button-hover">Get Started</a>
+    <a tabindex=3 href="#" class="w3-bar-item w3-button custom-button-hover">Books</a>
+    <a tabindex=2 href="#" class="w3-bar-item w3-button custom-button-hover">About Us</a>
+    <a tabindex=1 href="#" class="w3-bar-item w3-button custom-button-hover">Home</a>
+  </div>
+</div>
+
+<div class="centering max-height">
+  <!-- Header -->
+  <header class="w3-center sidebars header-background">
+    <h1 class="w3-margin w3-jumbo header-text">Love books?</h1>
+    <h3 class="w3-xlarge header-text">Join the discussion!</h3>
+    <button class="
+          btn
+          custom-background-color custom-color custom-button-hover
+          rounded-button
+          w3-padding-large
+          btn-wide
+          w3-xlarge w3-margin-top
+          first
+        " href="#" id="trigger-modal" onclick="openModal()">
+      Register
+    </button>
+  </header>
+
+  <!-- Modal and Three Info Panels-->
+  <div>
+    <div id="modal" class="w3-center">
+      <!-- Credit: https://codepen.io/Gthibaud/pen/MqpmXE -->
+      <div id="modal-background" class="modal-background"></div>
+      <div id="bookclubrego" class="modal custom-color-inverted">
+        <h1>Registration Details</h1>
+        <form class="w3-padding-32">
+          <div class="w3-large form-title">Your Details</div>
+          <div id="userDetails" class="form-section w3-padding-top-24">
+            <div class="w3-half">
+              <div><label for="givenName">Given Name: </label><br /></div>
+              <div>
+                <input id="givenName" class="input custom-input" type="text" name="Given Name" /><br />
+              </div>
+            </div>
+            <div class="w3-half">
+              <div><label for="surname">Surname: </label><br /></div>
+              <div>
+                <input id="surname" class="input custom-input" type="text" name="Surname" /><br />
+              </div>
+            </div>
+
+            <div class="w3-half">
+              <div><label for="username">Username: </label><br /></div>
+              <div>
+                <input id="username" class="input custom-input" type="text" name="Username" /><br />
+              </div>
+            </div>
+            <div class="w3-half">
+              <div><label for="password">Password </label><br /></div>
+              <div>
+                <input id="password" class="input custom-input" type="password" name="Password" /><br />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-title w3-large w3-left-align w3-padding-top-32">
+            Your Address
+          </div>
+          <div id="addresses" class="form-section w3-padding-top-24">
+            <div class="w3-half">
+              <div>
+                <label for="home-address">Home Address: </label><br />
+              </div>
+              <div>
+                <input id="home-address" class="input custom-input" type="text" name="Home Address" /><br />
+              </div>
+            </div>
+            <div class="w3-half">
+              <div>
+                <label for="work-address">Work Address: </label><br />
+              </div>
+              <div>
+                <input id="work-address" class="input custom-input" type="text" name="Work Address" /><br />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-title w3-large w3-padding-top-32">Your Contact</div>
+          <div id="contacts" class="form-section w3-padding-top-24">
+            <div class="w3-half">
+              <div><label for="phone">Mobile Number:</label><br /></div>
+              <div>
+                <input id="phone" class="input custom-input" type="tel" name="Phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /><br />
+              </div>
+            </div>
+            <div class="w3-half">
+              <div><label for="email">Email:</label><br /></div>
+              <div>
+                <input id="email" class="input custom-input" type="email" name="Email" /><br />
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="options">
+          <button id="registerModalBtn" class="
+                btn btn-wide
+                custom-background-color custom-color custom-button-hover
+              " onclick="closeModal()">
+            Register
+          </button>
+        </div>
+        <button aria-label="Close button" onclick="closeModal()" class="w3-button close-icon">
+          <i class="fa fa-dark-hover fa-close"></i>
+        </button>
+      </div>
+      <script src="scripts.js"></script>
+    </div>
+
+    <div class="sidebars three-panels">
+      <!-- Panel 1 -->
+      <div class="panel panel-left w3-third centering">
+        <!-- Image credit: https://www.pexels.com/photo/person-holding-white-and-brown-newspaper-3957616/-->
+        <img class="panel-img" src="book-review.jpg" alt="Book News" />
+        <h3>Latest News</h3>
+        <p class="panel-text">
+          Kia ora whānau. Well, here we are again, back with the latest
+          installment in the SOFTENG350 assignment. It was an exciting twist
+          to learn the project would...
+        </p>
+        <button class="btn custom-background-color custom-color custom-button-hover">
+          More
+        </button>
+      </div>
+
+      <!-- Panel 2 -->
+      <div class="panel w3-third centering">
+        <!-- Image credit: https://www.pexels.com/photo/pile-of-books-on-hand-2228557/ -->
+        <img class="panel-img" src="books-hand.jpg" alt="Books" />
+        <h3>Books</h3>
+        <p class="panel-text">
+          Find out what exciting books we've uncovered with this month's
+          reading list. There's sure to be something new and fun for everyone.
+          A new addition...
+        </p>
+        <button class="btn custom-background-color custom-color custom-button-hover">
+          More
+        </button>
+      </div>
+
+      <!-- Panel 3 -->
+      <div class="panel panel-right w3-third centering">
+        <!-- Image Credit: https://www.bds.org.nz/ -->
+        <img class="panel-img" src="2020-banner.png" alt="People discussing books" />
+        <h3>Get Involved</h3>
+        <p class="panel-text">
+          By joining the book discussion program, you'll get the chance to
+          meet new people and experience new and interesting reading
+          adventures...
+        </p>
+        <button class="btn custom-background-color custom-color custom-button-hover">
+          More
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-opacity custom-background-color custom-color">
+    <div class="footer-display">
+      <!-- Add font awesome icons -->
+      <a id="Facebook" href="#" class="fa fa-facebook w3-hover-opacity" aria-label="Facebook"></a>
+      <a href="#" class="fa fa-twitter w3-hover-opacity" aria-label="Twitter"></a>
+      <a href="#" class="fa fa-instagram w3-hover-opacity" aria-label="Instagram"></a>
+    </div>
+  </footer>
+</div>
+
+</html>
