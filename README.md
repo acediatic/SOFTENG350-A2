@@ -4,7 +4,7 @@ View live on [GitHub Pages](https://acediatic.github.io/350-A2/)
 
 A high fidelity prototype website built with simple HTML, CSS, and Javascript (no libraries), based on [BDS](https://www.bds.org.nz/). 
 
-Used a prescribed accessible colour palette, and was designed with accessibility requirements in mind. 
+Uses a prescribed accessible colour palette, and is designed with accessibility requirements in mind. 
 
 ## Attribution
 - [CSS Base Template](https://www.w3schools.com/w3css/w3css_downloads.asp)
