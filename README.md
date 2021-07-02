@@ -1,6 +1,8 @@
 # SOFTENG 350 Assignment 2
 
-Building a high fidelity prototype website with simple HTML, CSS, and Javascript (no libraries). 
+View live on [GitHub Pages](https://acediatic.github.io/350-A2/)
+
+A high fidelity prototype website built with simple HTML, CSS, and Javascript (no libraries), based on [BDS](https://www.bds.org.nz/). 
 
 Used a prescribed accessible colour palette, and was designed with accessibility requirements in mind. 
 
